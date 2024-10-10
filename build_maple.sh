@@ -54,4 +54,10 @@ echo "copying new files"
 echo
 cp ./out/arch/arm64/boot/Image.gz-dtb ./AnyKernel3/maple/
 cd ./AnyKernel3/maple/
-zip -r9 Pop_kernel-maple-"$version"-"$branch"-"$last_commit"-EAS.zip * -x .git README.md *placeholder
+zip -r9 Pop_kernel-maple"$version"-"$branch"-"$last_commit"-EAS.zip * -x .git README.md *placeholder
+
+echo
+echo "End"
+echo
+cd ..
+cd ..
